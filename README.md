@@ -1,32 +1,65 @@
-# React + TypeScript + Vite
+<div dir="rtl">
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# 🥫 מזווה חכם (Smart Pantry)
 
-Currently, two official plugins are available:
+> 🔗 **קישור לאפליקציה החיה:** [הכנס קישור ל-Vercel כאן]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📖 סקירה כללית
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+מערכת אינטרנטית לניהול חכם של המזווה הביתי, המשלבת ניהול מלאי מצרכים, שמירת מתכונים, והפקה חכמה של רשימות קניות.
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 🎯 הבעיה שהפרויקט פותר
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+קושי במעקב אחר מלאי המצרכים הקיים בבית, חוסר סדר, ובזבוז זמן בניסיון להמיר מתכונים לרשימת קניות מרוכזת ללא כפילויות.
+
+---
+
+## 👥 קהל יעד
+
+משפחות, בשלנים ביתיים ואנשים פרטיים שרוצים לייעל את שגרת הקניות וניהול המטבח שלהם.
+
+---
+
+## ⭐ מתחרים ובידול
+
+בעוד שהפתרונות הנפוצים היום הם רשימות ב"פתקים" (Notes) או קבוצות וואטסאפ אישיות שעושים באופן ידני, "מזווה חכם" מציעה פתרון הוליסטי שמקשר ישירות בין רכיבי המתכונים לרשימת הקניות בצורה אוטומטית.
+
+---
+
+## 🔌 שירותים חיצוניים
+
+| שירות | למה הוא משמש |
+| --- | --- |
+| **Supabase** | ניהול בסיס נתונים (Database) ואוטנטיקציית משתמשים (Auth) |
+
+---
+
+## 🗺️ תרשים מודל נתונים (ERD)
+
+![ERD Diagram](./erd.png)
+
+---
+
+## 🚀 הוראות הרצה מקומית
+
+להרצת הפרויקט בסביבה מקומית, יש לבצע את הצעדים הבאים:
+
+</div>
+
+```bash
+# התקנת התלויות (Dependencies)
+npm install
+
+# הרצת שרת הפיתוח
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+<div dir="rtl">
+
+לאחר מכן, האפליקציה תהיה זמינה בכתובת המקומית (בדרך כלל `http://localhost:5173`).
+
+</div>
